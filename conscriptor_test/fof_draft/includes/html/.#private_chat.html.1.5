@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>%league% Front Office Football Conscriptor version %version%</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script language="JavaScript" type="text/JavaScript" src="functions.js"></script>
+    <script type="text/javascript" src="soundmanager2.js"></script>
+    <script type="text/javascript">
+    <!--
+	soundManager.onload = function() {
+	
+	  soundManager.createSound('ring', 'mp3/ring.mp3')
+	  soundManager.createSound('click', 'mp3/click.mp3')
+	  soundManager.createSound('bell', 'mp3/bell.mp3')
+	}
+    //-->
+    </script>
+  </head>
+  <body class="chat_window">
+    <div></div>
+    <h2>Private chat with %team_name%</h2>
+    <input type="hidden" id="chat_room_id" value="%chat_room_id%">
+    <input type="hidden" id="chat_id" value="%chat_id%">
+    <div style="float: left; width: 50px">&nbsp;</div>
+    <div class="chat_box" id="chat_box"></div>
+    <div class="clear"></div>
+    <form onsubmit="send_chat(); return false">
+      <p>Message: <input type="text" id="message" size="80" name="%chat_id%" autocomplete="off">
+      <p><input type="submit" name="submit" value="Send">
+    </form>
+    <script language="JavaScript" type="text/JavaScript" src="chat.js"></script>
+    <script language="JavaScript" type="text/JavaScript">
+      get_chat();
+    </script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-621066-7");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+      pageTracker._setVar("%version%");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,991 @@
+body {
+	background-color: #000000;
+	text-align: center;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+h3 {
+	
+	font-size: 2em;
+}
+
+img {
+	border:0px;
+	margin:0px; 
+	padding:0px;
+}
+
+button {
+
+   font-size:0.9em;
+   font-family:Arial Black,sans-serif;
+   color:#DDDDDD;
+   background-color:#000000;
+   border-style:outset;
+   border-color:#dddddd;
+   border-width:2px;
+}
+
+button:hover {
+
+   font-size:0.9em;
+   font-family:Arial Black,sans-serif;
+   color:#FFFFFF;
+   background-color:#666666;
+   border-style:outset;
+   border-color:#FFFFFF;
+   border-width:2px;
+}
+
+/**************************************************************
+
+	GENERAL USE / LAYOUT
+	
+**************************************************************/
+
+.inlineDiv {float: left;}
+.inlineDivBackward{float: right;}
+
+.hbf {
+	background-color: #afafaf;
+	padding: 1px;
+}
+
+.bodyContent {
+	text-align:center;
+	padding: 15px 5px 5px 10px;
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	background-color:#afafaf;
+	
+}
+
+.bodyContent a{
+	color: #FFFFFF;
+}
+
+.bodyContent a:hover{
+	color: #333333;
+}
+
+.center {
+	margin: 0px auto 0px auto;
+}
+
+hr.sectionUnderline { 
+	color: #000000;
+	margin-top:-27px;
+	margin-left:15px;
+	margin-right:15px;
+	height:3px;
+}
+
+.section {
+	width:90%;
+	text-align:left;
+}
+
+.sectionNav {
+	width:80%;
+	text-align:left;
+}
+
+.sectionNav a {
+	color: #FFFFFF;
+}
+
+.sectionNav a.bold {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: overline;
+}
+
+.panel {
+	width: 100%;			
+	padding: 10px;
+	border-style: ridge;
+	border-width: 3px;
+}
+
+.panel .heading {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.inner {
+	
+	border-width: 2px;
+	border-style: solid;
+	border-color: #333333;
+	background-color: #afafaf;
+	margin:0px;
+}
+
+
+div.bulletin{
+		text-align:center; 
+		font-weight: bold; 
+		padding: 0px;
+		background-color: #000000; 
+		color: #CCCCCC;
+		display: inline-table;
+	}
+
+.bulletin div{ 
+		text-align:left; 
+		padding: 8px 5px; 
+		font-weight: normal;
+		margin-top: 1px;
+		background-color:#ffffdd;
+		color: #000000;
+		
+	}
+
+td.navMain a{
+	color: #CCCCCC;
+	text-decoration: none;	
+	font-family: "Arial Black";
+	font-size: 1.2em;
+}
+
+td.navMain a:hover {
+	color: #FFFFFF;
+	text-decoration: underline overline;
+}
+
+td.navMain a.active {
+	color: #eeeeee;
+	text-decoration: overline;
+}
+
+
+td.navMain span{
+	padding: 20px;
+}
+
+table.boxScore {
+	border: 1px;
+	border-style: solid;
+	border-color: #000000;
+	border-collapse: collapse;
+	margin: 0px auto 0px auto;
+
+}
+
+table.boxScore td {
+	border: 1px;
+	border-style: solid;
+	border-color: #000000;	
+	background-color: #CCCCCC;
+	text-align:left;
+	padding: 3px 5px;
+}
+
+table.boxScore th {
+	border: 1px;
+	border-style: solid;
+	border-color: #000000;	
+	background-color: #666666;
+	padding: 3px 5px;
+}
+
+table.boxScore4th {
+	border: 1px;
+	border-style: solid;
+	border-color: #DD0000;
+	border-collapse: collapse;
+	margin: 0px auto 0px auto;
+
+}
+
+table.boxScore4th td {
+	border: 1px;
+	border-style: solid;
+	border-color: #DD0000;	
+	background-color: #FFFFFF;
+	text-align:left;
+	padding: 3px 5px;
+}
+
+table.boxScore4th th {
+	border: 1px;
+	border-style: solid;
+	border-color: #000099;	
+	background-color: #000033;
+	padding: 3px 5px;
+}
+
+table.teamNavBFC {
+	border:1px solid white;
+	background-color: black;
+}
+
+table.teamNavWFC {
+	border:1px solid black;
+	background-color: white;
+}
+
+table.teamNavWFC td, table.teamNavBFC td{
+	height:20px; 
+	width:40px; 
+	border-width:2px 1px 2px 1px; 
+	border-style:solid;
+	margin: 0px;
+	padding: 0px;
+}
+
+.teamNavImg {
+	display: block;
+}
+
+table.BFCRed td{
+	border-color: #FF0000;
+}
+
+table.BFCYellow td{
+	border-color: #FFF000;
+}
+
+table.BFCBlue td{
+	border-color: #004EFF;
+}
+
+table.BFCGreen td{
+	border-color: #24fb08;
+}
+
+table.WFCRed td{
+	border-color: #93000a;
+}
+
+table.WFCYellow td{
+	border-color: #ded100;
+}
+
+table.WFCBlue td{
+	border-color: #000047;
+}
+
+table.WFCGreen td{
+	border-color: #0c5700;
+}
+
+.uflTable{
+	
+	border: 2px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #ffffdd;
+	border-collapse: collapse;
+}
+
+td.uflTable {
+	
+	border:1px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 1px 3px 1px 5px;
+	vertical-align: top;
+	
+}
+
+
+.dataTable{
+	
+	border: 2px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #ffffdd;
+	border-collapse: collapse;
+}
+
+.dataTable td {
+	
+	border:1px;
+	border-style: solid;
+	border-color: #000000;
+	text-align: right;
+	padding: 1px 3px 1px 5px;
+	font-size: 0.8em;
+	
+}
+
+.dataTable a {
+	color: #33F;
+}
+
+
+.dataTable a:visited {
+	color: #337;
+}
+
+.news
+{
+	 border:1px dotted black;
+	 padding: 2px;
+}
+
+div.news p{
+	text-align: left;
+	margin: 2px;
+}
+
+th {
+	
+	border: 1px;
+	border-style: groove;
+	border-color: #333333;
+	font-family:"Arial Black";
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: 2px;
+}
+
+.dataTable .special {
+	background-color: #bbbbbb;
+	font-weight:bold;
+}
+
+th.lvl1 {
+	background-color: #333333;
+	font-size: .9em;
+}
+
+th.lvl2 {
+	background-color: #666666;
+	color: #000000;
+	text-align: left;
+	font-size: 0.9em;
+	padding-left: 7px;
+	padding-top: 3px;
+	padding-bottom: 0px;
+}
+
+th.lvl3 {
+	background-color: #000000;
+	font-size: 0.8em;
+	font-family: arial;
+	padding: 3px 5px;
+}
+
+th.sortable {
+	color: #aaaaff;
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+
+.footerContent {
+	
+	background-color: #afafaf;
+	padding: 3px;
+	font-size: 0.7em;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.selected {
+	border: 2px solid red;
+	background-color: #999999;
+}
+
+
+.borderless {
+	border: 0px;
+}
+
+.headlineSmall {
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+div #playerInfo {
+
+	height: 190px;
+}
+
+
+/*
+ * 
+ * Range-related styles (draft preview)
+ * 
+ */
+	.clear {
+		clear: both;
+	}
+	.range{
+		margin: 5px;
+		margin-bottom: 8px;
+		width: 230px;
+	}
+	
+	.rangeContainer{
+		text-align: left;
+	}
+	
+	.rangeBar{
+		width:100px;
+		height: 13px;
+		background: black;
+		color: white;
+		border: 1px ridge white;
+		position: relative;
+		float: right;
+		}
+		
+	.rangeMarker{
+		position: absolute; 
+		font-size: 9px;
+		text-align: center;
+		font-family: "Arial";
+		vertical-align: middle;
+		height: 100%;
+		color: black;
+		border: 1px ridge black;
+		margin: -1px;
+	}
+	
+	.rangeMarker0{
+		background: red;
+	}
+	.rangeMarker1{
+		background: orange;
+	}
+	.rangeMarker2{
+		background: yellow;
+	}
+	.rangeMarker3{
+		background: green;
+	}
+	
+	.rangeFill{
+		position: absolute;
+		height: 100%;
+		font-size: 10px;
+		border: 1px solid black;
+		margin: -1px;
+	}
+	
+	.rangeFill0{
+		background: darkred;
+	}
+	.rangeFill1{
+		background: darkorange;
+	}
+	.rangeFill2{
+		background: gold;
+	}
+	.rangeFill3{
+		background: darkgreen;
+	}
+	
+	
+	.rangeTitle{
+		color: white	;
+		font-size: 10px;
+		font-family: "Arial";
+		float: left;
+	}
+
+	.playerRetired {
+		background-color: #FFFFFF;
+		color: #000000;
+		border-color: #000000;
+	}
+
+/*
+ * 
+ * 
+ * 
+ * TEAM SPECIFIC CLASSES BEGIN HERE 
+ * 
+ * ATLANTA - 21
+ * BALTIMORE - 5
+ * BOSTON - 14
+ * CAROLINA - 12
+ * CHICAGO - 6
+ * CINCINNATI - 29
+ * DALLAS - 22
+ * DENVER - 20
+ * DETROIT - 15
+ * HOUSTON - 11
+ * INDIANAPOLIS - 18
+ * KANSAS CITY - 2
+ * LAS VEGAS - 8
+ * LOS ANGELES - 13
+ * MEMPHIS - 30
+ * MIAMI - 28
+ * MINNESOTA - 7
+ * NEW ORLEANS - 31
+ * NEW YORK ROOKS - 10
+ * NEW YORK ZEPHYRS - 19
+ * PHILADELPHIA - 16
+ * PHOENIX - 17
+ * PITTSBURGH - 9
+ * PORTLAND - 25
+ * SACRAMENTO - 23
+ * SAN ANTONIO - 27
+ * SAN DIEGO - 26
+ * SAN FRANCISCO - 24
+ * SEATTLE - 0
+ * ST. LOUIS - 1
+ * UTAH - 4
+ * WASHINGTON - 3
+ * 
+ */
+
+/* 0 - SEATTLE */
+.tm_th1_0 {
+	background-color: #222222;
+	border-color: #FF6600;
+	color: #FF9900;
+}
+
+.tm_th2_0 {
+	background-color: #333333;
+	color: #FF9900;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 1 - ST. LOUIS */
+.tm_th1_1 {
+	background-color: #CC0000;
+	border-color: #CCCCCC;
+	color: #CCCCCC;
+}
+
+.tm_th2_1 {
+	background-color: #CCCCCC;
+	color: #CC0000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 2 - KANSAS CITY */
+.tm_th1_2 {
+	background-color: #003300;
+	border-color: #999900;
+	color: #999900;
+}
+
+.tm_th2_2 {
+	background-color: #999900;
+	color: #003300;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 3 - WASHINGTON */
+.tm_th1_3 {
+	background-color: #0000FF;
+	border-color: #FF0000;
+	color: #FFFFCC;
+}
+
+.tm_th2_3 {
+	background-color: #0000FF;
+	color: #FFFFCC;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 4 - UTAH */
+.tm_th1_4 {
+	background-color: #996600;
+	border-color: #FFFFFF;
+	color: #000000;
+}
+
+.tm_th2_4 {
+	background-color: #000000;
+	color: #996600;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+
+/* 5 - BALTIMORE */
+.tm_th1_5 {
+	background-color: #CC0000;
+	border-color: #CCCC00;
+	color: #000000;
+}
+
+.tm_th2_5 {
+	background-color: #000000;
+	color: #CCCC00;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+
+/* 6 - CHICAGO */
+.tm_th1_6 {
+	background-color: #CCCC33;
+	border-color: #006699;
+	color: #006699;
+}
+
+.tm_th2_6 {
+	background-color: #00AAAA;
+	color: #FFFFFF;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+
+/* 7 - MINNESOTA */
+.tm_th1_7 {
+	background-color: #0000CC;
+	border-color: #00FF00;
+	color: #FFFFFF;
+}
+
+.tm_th2_7 {
+	background-color: #00FF00;
+	color: #000099;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 8 - LAS VEGAS */
+.tm_th1_8 {
+	background-color: #CCCC99;
+	border-color: #3399FF;
+	color: #663300;
+}
+
+.tm_th2_8 {
+	background-color: #3399FF;
+	color: #DDDDAA;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 9 - PITTSBURGH */
+.tm_th1_9 {
+	background-color: #CCCC33;
+	border-color: #FFFFFF;
+	color: #000000;
+}
+
+.tm_th2_9 {
+	background-color: #000000;
+	color: #CCCC33;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 10 - NEW YORK ROOKS */
+.tm_th1_10 {
+	background-color: #990033;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.tm_th2_10 {
+	background-color: #000000;
+	color: #990033;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 11 - HOUSTON */
+.tm_th1_11 {
+	background-color: #FF0000;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.tm_th2_11 {
+	background-color: #000000;
+	color: #FF0000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 12 - CAROLINA */
+.tm_th1_12 {
+	background-color: #0000FF;
+	border-color: #CCCC33;
+	color: #CCCC33;
+}
+
+.tm_th2_12 {
+	background-color: #CCCC33;
+	color: #0000FF;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+
+/* 13 - LOS ANGELES */
+.tm_th1_13 {
+	background-color: #990000;
+	border-color: #CCCC33;
+	color: #000000;
+}
+
+.tm_th2_13 {
+	background-color: #CCCC33;
+	color: #990000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 14 - BOSTON */
+.tm_th1_14 {
+	background-color: #006600;
+	border-color: #FF6600;
+	color: #FFFFFF;
+}
+
+.tm_th2_14 {
+	background-color: #FF6600;
+	color: #000000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 15 - DETROIT */
+.tm_th1_15 {
+	background-color: #000000;
+	border-color: #CCCCCC;
+	color: #FFFF33;
+}
+
+.tm_th2_15 {
+	background-color: #000000;
+	color: #CCCCCC;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 16 - PHILADELPHIA */
+.tm_th1_16 {
+	background-color: #000000;
+	border-color: #FFFFFF;
+	color: #CC0000;
+}
+
+.tm_th2_16 {
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 17 - PHOENIX */
+.tm_th1_17 {
+	background-color: #DDDD00;
+	border-color: #FFFFFF;
+	color: #FF0000;
+}
+
+.tm_th2_17 {
+	background-color: #DDDD00;
+	color: #FF0000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 18 - INDIANAPOLIS */
+.tm_th1_18 {
+	background-color: #333333;
+	border-color: #FFFFFF;
+	color: #339900;
+}
+
+.tm_th2_18 {
+	background-color: #339900;
+	color: #333333;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 19 - NEW YORK ZEPHYRS */
+.tm_th1_19 {
+	background-color: #666666;
+	border-color: #0099FF;
+	color: #000000;
+}
+
+.tm_th2_19 {
+	background-color: #000000;
+	color: #0099FF;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 20 - DENVER */
+.tm_th1_20 {
+	background-color: #000000;
+	border-color: #333333;
+	color: #660066;
+}
+
+.tm_th2_20 {
+	background-color: #660066;
+	color: #000000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 21 - ATLANTA */
+.tm_th1_21 {
+	background-color: #000033;
+	border-color: #660000;
+	color: #FFFFFF;
+}
+
+.tm_th2_21 {
+	background-color: #660000;
+	color: #FFFFFF;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 22 - DALLAS */
+.tm_th1_22 {
+	background-color: #FFFF00;
+	border-color: #FF6600;
+	color: #000000;
+}
+
+.tm_th2_22 {
+	background-color: #FF6600;
+	color: #000000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 23 - SACRAMENTO */
+.tm_th1_23 {
+	background-color: #003366;
+	border-color: #999999;
+	color: #FF9900;
+}
+
+.tm_th2_23 {
+	background-color: #FF9900;
+	color: #003366;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 24 - SAN FRANCISCO */
+.tm_th1_24 {
+	background-color: #000099;
+	border-color: #FFFF00;
+	color: #FFFF00;
+}
+
+.tm_th2_24 {
+	background-color: #FFFF00;
+	color: #000099;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 25 - PORTLAND */
+.tm_th1_25 {
+	background-color: #0099FF;
+	border-color: #FFFFFF;
+	color: #000033;
+}
+
+.tm_th2_25 {
+	background-color: #000033;
+	color: #0099FF;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 26 - SAN DIEGO */
+.tm_th1_26 {
+	background-color: #336600;
+	border-color: #660000;
+	color: #CCCC00;
+}
+
+.tm_th2_26 {
+	background-color: #336600;
+	color: #000000;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 27 - SAN ANTONIO */
+.tm_th1_27 {
+	background-color: #999933;
+	border-color: #660000;
+	color: #000000;
+}
+
+.tm_th2_27 {
+	background-color: #660000;
+	color: #999933;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 28 - MIAMI */
+.tm_th1_28 {
+	background-color: #FFFF00;
+	border-color: #00CCCC;
+	color: #993300;
+}
+
+.tm_th2_28 {
+	background-color: #993300;
+	color: #FFFF00;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 29 - CINCINNATI */
+.tm_th1_29 {
+	background-color: #FF9900;
+	border-color: #FFFFFF;
+	color: #666666;
+}
+
+.tm_th2_29 {
+	background-color: #333333;
+	color: #FF9900;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 30 - MEMPHIS */
+.tm_th1_30 {
+	background-color: #000033;
+	border-color: #CCCC00;
+	color: #CCCCCC;
+}
+
+.tm_th2_30 {
+	background-color: #CCCC00;
+	color: #000033;
+	text-align: RIGHT;
+	padding-right: 7px;
+}
+
+/* 31 - NEW ORLEANS */
+.tm_th1_31 {
+	background-color: #00FF00;
+	border-color: #CC0099;
+	color: #000000;
+}
+
+.tm_th2_31 {
+	background-color: #000000;
+	color: #CC0099;
+	text-align: RIGHT;
+	padding-right: 7px;
+}

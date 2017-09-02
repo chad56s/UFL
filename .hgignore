@@ -1,0 +1,8 @@
+syntax: glob
+
+solecismic*
+error_log
+news
+logo*.jpg
+helmet*.gif
+.project
