@@ -302,7 +302,7 @@ class League {
 	//LOAD ALL THE TEAMS WITH THIS CALL
 	private function loadAllTeams()
 	{
-		$this->aTeams =& Team::loadAllTeams();
+		$this->aTeams = Team::loadAllTeams();
 	}
 	
 }

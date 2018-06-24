@@ -123,7 +123,7 @@
 			return $sql;
 		}
 		
-		public function showGameInfo($w,$y,$size='medium')
+		public function showGameInfo($w,$y,$r,$size='medium')
 		{
 			$lge = new League();
 			$q = $this->getGamesOfTheWeek($w,$y);

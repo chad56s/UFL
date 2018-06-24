@@ -271,7 +271,7 @@ class Injury extends Transaction {
 		/*
 	 * This function takes a row from the query and returns the terms of the transaction
 	 */
-	protected function translateTerms($r){
+	protected function translateTerms($r, $person){
 		$terms = "";
 		
 		$terms = $this->getInjurySeverity($r->salary % 1000);
