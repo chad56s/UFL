@@ -92,8 +92,8 @@
 			}
 		}
 		$gameId = sprintf("%d%02d%02d%02d",$year,$week-1,$away,$home);
-		$awayTeam =& Team::fromId($away);
-		$homeTeam =& Team::fromId($home);
+		$awayTeam = Team::fromId($away);
+		$homeTeam = Team::fromId($home);
 		//We might need to parse the weather if the database hasn't been updated yet (i.e. the week is still in progress)		
 		if(!isset($temp)){
 			$logFile = APP_ROOT . '/' . getGameFileName('log',$year, $week, $home, $away);

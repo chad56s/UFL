@@ -76,8 +76,8 @@ class LogFileParser
 		$this->dataMgr = createNewDataManager();
 		
 		//load the teams
-		$this->awayTeam =& Team::fromId($awayId);
-		$this->homeTeam =& Team::fromId($homeId);
+		$this->awayTeam = Team::fromId($awayId);
+		$this->homeTeam = Team::fromId($homeId);
 		
 	}
 	
