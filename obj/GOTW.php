@@ -21,7 +21,7 @@
 		/*
 		 * show game of the week info with rank = r for week w, year y
 		 */
-		public function showGameInfo($w,$y,$r,$size='medium')
+		public function showGameInfo($w,$y,$r=0,$size='medium')
 		{
 			$lge = new League();
 			$q = $this->getGamesOfTheWeek($w,$y);
@@ -121,18 +121,6 @@
 							 	 AND year = ". $y . " 
 					  		 AND rank = 0";
 			return $sql;
-		}
-		
-		public function showGameInfo($w,$y,$r,$size='medium')
-		{
-			$lge = new League();
-			$q = $this->getGamesOfTheWeek($w,$y);
-			
-			if($row = mysql_fetch_assoc($q))
-			{
-				$this->displayGame($row,$size);
-			}
-				
 		}
 		
 	}//end class GameOfTheWeek
