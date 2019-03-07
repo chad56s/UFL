@@ -100,10 +100,10 @@
 						<tr><th>Thursday</th><th>Saturday</th></tr>
 						<tr>
 							<td class='uflTable' style='width:50%;'>";
-							$gotw->showGameInfo($w,$y);
+							$gotw->showGameInfo($w,$y,2);
 							echo "</td>
 							<td class='uflTable' style='width:50%;'>";
-							$gotw->showGameInfo($w,$y);
+							$gotw->showGameInfo($w,$y,3);
 							echo "</td>
 						</tr>";
 						
@@ -130,12 +130,12 @@
 			
 			echo "<tr>			
 							<td class='uflTable' style='width:50%;'>";	
-								$gotw->showGameInfo($w,$y,$size);
+								$gotw->showGameInfo($w,$y,$g1,$size);
 				echo "</td>";
 				
 			if($numGames > 1){
 				echo "<td class='uflTable' style='width:50%;'>";
-								$gotw->showGameInfo($w,$y,$size);
+								$gotw->showGameInfo($w,$y,$g2,$size);
 				echo "</td>";
 			}
 			
